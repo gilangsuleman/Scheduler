@@ -38,11 +38,12 @@ public class DosenDaoTest {
         d.setNipy("aabbccddee");
         d.setEmail("is.mohidin@gmail.com");
         d.setAlamat("isimu");
-        d.setHp("081");
+        d.setHp("081244423769");
         dosenDao.save(d);
         Assert.assertNotNull(d.getId());
     }
 
+    @Test
     public void cariById() {
         Dosen d=dosenDao.findOne("012");
         
@@ -52,7 +53,7 @@ public class DosenDaoTest {
         Assert.assertEquals("aabbccddee", d.getNipy());
         Assert.assertEquals("is.mohidin@gmail.com", d.getEmail());
         Assert.assertEquals("isimu", d.getAlamat());
-        Assert.assertEquals("081234567", d.getHp());
+        Assert.assertEquals("081244423769", d.getHp());
         
         Assert.assertNotNull(dosenDao.findOne("012"));
     }
