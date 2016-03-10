@@ -56,7 +56,7 @@
                 <version>0.7.5.201505241946</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/App*</exclude>
+                        <exclude>**/App.*</exclude>
                     </excludes>
                 </configuration>
                 <executions>

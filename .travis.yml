@@ -1,23 +1,21 @@
 language: java
 
 jdk:
-    - oraclejdk7
+    - oraclejdk8
 
 services:
     - mysql
 
 env:
-    - PROJECT_FOLDER=jadwal-poligon
+    - PROJECT_FOLDER=Jadwal-Poligon
 
 before_install: 
     - mysql -uroot -e "grant all on jadwal.* to jadwal@localhost identified by 'jadwal'"
     - mysql -uroot -e "drop database if exists jadwal"
     - mysql -uroot -e "create database jadwal"
-
+    
 before_script:
     - cd $PROJECT_FOLDER
 
 after_success:
     - mvn jacoco:report coveralls:report
-
-
