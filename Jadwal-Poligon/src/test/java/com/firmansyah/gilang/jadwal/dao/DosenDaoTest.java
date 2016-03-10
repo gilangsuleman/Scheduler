@@ -34,11 +34,11 @@ public class DosenDaoTest {
         Dosen d = new Dosen();
         d.setId("012");
         d.setNama("ismail mohidin");
-        d.setNip("123456789");
-        d.setNipy("abcdefghijk");
+        d.setNip("00112233");
+        d.setNipy("aabbccddee");
         d.setEmail("is.mohidin@gmail.com");
         d.setAlamat("isimu");
-        d.setHp("081234567");
+        d.setHp("081");
         dosenDao.save(d);
         Assert.assertNotNull(d.getId());
     }
@@ -48,8 +48,8 @@ public class DosenDaoTest {
         
         Assert.assertNotNull(d);
         Assert.assertEquals("ismail mohidin", d.getNama());
-        Assert.assertEquals("123456789", d.getNip());
-        Assert.assertEquals("abcdefghijk", d.getNipy());
+        Assert.assertEquals("00112233", d.getNip());
+        Assert.assertEquals("aabbccddee", d.getNipy());
         Assert.assertEquals("is.mohidin@gmail.com", d.getEmail());
         Assert.assertEquals("isimu", d.getAlamat());
         Assert.assertEquals("081234567", d.getHp());
