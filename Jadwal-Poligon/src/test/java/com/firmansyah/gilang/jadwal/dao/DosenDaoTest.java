@@ -36,7 +36,7 @@ public class DosenDaoTest {
         d.setNama("ismail mohidin");
         d.setNip("123456789");
         d.setNipy("abcdefghijk");
-        d.setEmail("is.mohidin@ti.poligon.ac.id");
+        d.setEmail("is.mohidin@gmail.com");
         d.setAlamat("isimu");
         d.setHp("081234567");
         dosenDao.save(d);
@@ -50,7 +50,7 @@ public class DosenDaoTest {
         Assert.assertEquals("ismail mohidin", d.getNama());
         Assert.assertEquals("123456789", d.getNip());
         Assert.assertEquals("abcdefghijk", d.getNipy());
-        Assert.assertEquals("is.mohidin@ti.poligon.ac.id", d.getEmail());
+        Assert.assertEquals("is.mohidin@gmail.com", d.getEmail());
         Assert.assertEquals("isimu", d.getAlamat());
         Assert.assertEquals("081234567", d.getHp());
         

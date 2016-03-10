@@ -23,8 +23,8 @@ public class Dosen {
     private String nama;
     private String nip;
     private String nipy;
-    private String email;
     private String alamat;
+    private String email;
     private String hp;
 
     public String getAlamat() {

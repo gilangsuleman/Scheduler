@@ -23,9 +23,9 @@ nama varchar(255) not null
 create table dosen(
 id varchar(255) primary key,
 nama varchar(255) not null,
-nip varchar(255) unique,
-nipy varchar(255) unique,
-email varchar(255) unique,
+nip varchar(255) not null,
+nipy varchar(255) not null, 
+email varchar(255) not null unique,
 alamat varchar(255) not null,
 hp varchar(255) not null
 )Engine=InnoDB;
