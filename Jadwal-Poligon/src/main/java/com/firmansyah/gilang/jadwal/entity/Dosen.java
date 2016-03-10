@@ -20,13 +20,12 @@ public class Dosen {
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
-    
     private String nama;
     private String nip;
     private String nipy;
-    private String alamat;
-    private String email;
     private String hp;
+    private String email;
+    private String alamat;
 
     public String getAlamat() {
         return alamat;

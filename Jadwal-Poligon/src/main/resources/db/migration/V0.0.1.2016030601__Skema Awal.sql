@@ -25,9 +25,9 @@ id varchar(255) primary key,
 nama varchar(255) not null,
 nip varchar(255) not null,
 nipy varchar(255) not null, 
+hp varchar(255) not null,
 email varchar(255) not null unique,
-alamat varchar(255) not null,
-hp varchar(255) not null
+alamat varchar(255) not null
 )Engine=InnoDB;
 
 --tabel kelas--
